@@ -1,0 +1,31 @@
+# Data (too large for git, 19GB)
+data/
+
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models / outputs
+*.pkl
+*.h5
+*.ckpt
+models/
+outputs/
+logs/
+mlruns/

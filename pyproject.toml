@@ -1,0 +1,33 @@
+[project]
+name = "wind-turbine-anomaly-detection"
+version = "0.1.0"
+description = "End-to-end anomaly detection pipeline on the CARE to Compare wind turbine dataset"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "duckdb",
+    "scipy",
+    "statsmodels",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyterlab",
+    "ipykernel",
+]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
